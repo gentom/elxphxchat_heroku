@@ -8,11 +8,9 @@ defmodule Elxphxchat.Mixfile do
       elixir: "~> 1.5",
       elixirc_paths: elixirc_paths(Mix.env),
       compilers: [:phoenix, :gettext] ++ Mix.compilers,
-      # start_permanent: Mix.env == :prod,
+      start_permanent: Mix.env == :prod,
       aliases: aliases(),
-      deps: deps(),
-      build_embedded: Mix.env == :prod,
-      start_permanent: Mix.env == :prod
+      deps: deps()
     ]
   end
 
